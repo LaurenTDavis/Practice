@@ -35,25 +35,30 @@
 //	b. method to console log an uppercased version of the quote with exclamation points 
 
 
-var Quote = function(text, author) {
-	this.text = text || "Default Text" ;
-	this.author = author || "Default Author";
-}
+// var Quote = function(text, author) {
+// 	this.text = text || "Default Text" ;
+// 	this.author = author || "Default Author";
+// }
 
-var someQuote = new Quote("So long and thanks for all the fish", "Douglas Adams");
-console.log(someQuote);
+// var someQuote = new Quote("So long and thanks for all the fish", "Douglas Adams");
+// console.log(someQuote);
 
-var thatQ = new Quote();
-console.log(thatQ);
+// var thatQ = new Quote();
+// console.log(thatQ);
 
 
 
-Quote.prototype.count = function() {
-	return this.text.split(' ').length;
-}
+// Quote.prototype.count = function() {
+// 	return this.text.split(' ').length;
+// }
 
-Quote.prototype.excite = function() {
-	console.log(this.text.toUpperCase() + '!!!');
-}
+// Quote.prototype.excite = function() {
+// 	console.log(this.text.toUpperCase() + '!!!');
+// }
+
+
+
+
+
 
 
