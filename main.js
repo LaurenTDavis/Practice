@@ -59,6 +59,56 @@
 
 
 
+// var numberHellos = 0; 
+// var sayHi = function() {
+// 	console.log('hi');
+// 	numberHellos++;
+
+// }
+
+// var yellHi = function() {
+// 	console.log("HI");
+// 	numberHellos++;
+// }
+
+
+var PersonConstructor = function() {
+	var people = []; 
+	var Person = function(firstName, lastName, profession) {
+		this.firstName = firstName;
+		this.lastName = lastName; 
+		this.profession = profession;
+		people.push(this); 
+	}
+
+	Person.listPeople = function() {
+		return people;
+	}
+
+
+	var createInfo  = function(person) {
+		return person.firstName + ' is avery talented ' + person.profession + '.';
+	}
+	
+	Person.prototype.whoDat = function() {
+		return createInfo(this);
+	}
+
+
+
+	return Person;
+}
+var makeAPerson = PersonConstructor();
+var hansel = new makeAPerson('Hansel', '[]', 'Professional Turtle Rider')
+var gretel = new makeAPerson('Gretel', '[]', 'Crumb Droppah')
+
+var makeAnotherPerson = PersonConstructor();
+var hansel2 = new makeAnotherPerson('Hansel2', '[]', 'Semi-Pro Evil Bunny Rider')
+var gretel2 = new makeAnotherPerson('Gretel2', '[]', 'Stick Picker-Uppah')
+
+var someGuy = new makeAPerson('Some', 'Guy', 'Does Stuff');
+
+
 
 
 
